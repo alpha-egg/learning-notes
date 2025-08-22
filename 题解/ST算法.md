@@ -10,8 +10,6 @@ $$
 
 递推的思想是讲要求的区间进行二分，最大值就是两部分最大值的最大值。
 
-王续期太强！！！！
-
 ```c++
 int a[M],f[M][22];
 void setf(){
@@ -35,86 +33,45 @@ int st(int l,int r){
 
 ```c++
 #include<bits/stdc++.h>
-
 #define REP(i,a,b) for(int i=(a); i<=(b); i++)
-
 #define PER(i,a,b) for(int i=(a); i>=(b); i--)
-
 using namespace std;
-
 const int M=1e5+50;
-
 typedef long long ll;
 
-  
-
 inline ll rd(){
-
     ll x=0,f=1; char c=getchar(); while(!isdigit(c)){if(c=='-') f=-1; c=getchar();}
-
     while(isdigit(c)){x=10*x+c-'0'; c=getchar();} return x*f;
-
 }
-
   
-
 int logn[M],f[M][22];
-
 int n,m,a[M];
-
   
-
 void setl(){
-
     logn[1]=0;
-
     REP(i,2,n) logn[i]=logn[i>>1]+1;
-
 }
-
   
-
 void setf(){
-
     REP(i,1,n) f[i][0]=a[i];
-
     int t=logn[n];
-
     REP(i,1,t){
-
         REP(j,1,n-(1<<i)+1) f[j][i]=max(f[j][i-1],f[j+(1<<(i-1))][i-1]);
-
     }
-
 }
-
   
-
 int st(int l,int r){
-
     int k=logn[r-l+1];
-
     return max(f[l][k],f[r-(1<<k)+1][k]);
-
 }
-
 int main(){
-
     n=rd(), m=rd();
-
     REP(i,1,n) a[i]=rd();
-
     setl(),setf();
-
     while(m--){
-
         int l=rd(),r=rd();
-
         printf("%d\n",st(l,r));
-
     }
-
     return 0;
-
 }
 ```
