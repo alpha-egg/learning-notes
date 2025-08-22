@@ -11,10 +11,14 @@
             "id": "181c0b545726e254",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "题解/ST算法.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ST算法"
             }
           }
         ]
@@ -162,16 +166,17 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "181c0b545726e254",
   "lastOpenFiles": [
+    "题解/七夕祭.md",
     "API.md",
     "题解/逆序数.md",
     "题解/火车进栈.md",
     "题解/火车进出站问题.md",
-    "题解/七夕祭.md",
     "题解/ST算法.md",
     "题解/genius ACM.md",
     "题解",
