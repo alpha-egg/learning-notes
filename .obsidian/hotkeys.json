@@ -1,0 +1,18 @@
+{
+  "obsidian-git:add-to-gitignore": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "G"
+    }
+  ],
+  "obsidian-git:commit-smart": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ]
+}
